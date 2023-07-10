@@ -1,0 +1,206 @@
+body{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/000/153/301/original/vector-old-dirty-grunge-note-paper-background.jpg");
+}
+
+.container{
+    border: 1px black solid;
+    background-color: white;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.title_time{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+#time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-area{
+    display: flex;
+    justify-content: center;
+    padding:0 5vw;
+    padding-bottom: 1em;
+
+}
+
+.input-area input{
+    width: 80%;
+    margin-right: 1em;
+    height: 3rem;
+    text-align: center;
+}
+
+.input-area div{
+    display: flex;
+    justify-content: right;
+    align-self:center;
+    width: 20%;
+    padding: 0;
+}
+
+#add-button{
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+.trash-icon{
+    color: red;
+}
+.unchecked-icon{
+    color: green;
+}
+
+.checked-icon{
+    color: gray;
+}
+
+
+.tab-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    border: 1px lightgray solid;
+}
+
+.task-area{
+    display: flex;
+    flex-direction: column;
+    padding:0 5vw;
+}
+.tab-container div{
+    padding : 1em;
+    cursor: pointer;
+    
+}
+
+#under-line{
+    position:absolute;
+    height: 3px;
+    background-color: green;
+    padding: 0;
+    transition: 0.5s;
+}
+
+.task-list{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: 1em 0;
+    font-size: 1.5em;
+    
+}
+
+.task-list-check{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: 1em 0;
+    font-size: 1.5em;
+    background-color: lightgray;
+}
+
+.task-list div{
+    margin-left: 2em;
+}
+.task-list button{
+    margin-right: 2em;
+}
+
+.task-list-check div{
+    margin-left: 2em;
+}
+.task-list-check button{
+    margin-right: 2em;
+}
+
+.checked-event{
+    text-decoration: line-through;
+    color: gray;
+}
+
+
+
+
+
+@media screen and (max-width:45em){
+    .title_time{
+        padding: 1em;
+    }
+    .title_time h1{
+       font-size: calc(1rem + 1.5vw);
+    }
+
+    .title_time h2{
+        font-size: calc(1rem + .9vw);
+     }
+    
+    .title_time p {
+        font-size: 0.8rem;
+    }
+
+    .input-area input{
+        width: 80%;
+        margin-right: 1em;
+        height: 2rem;
+        font-size: 0.8rem;
+
+    }
+
+    .tab-container div{
+        padding : 0.3em;
+        font-size: 0.8rem;
+    }
+
+    .tab-container{
+        margin-bottom: 0.5em;
+    }
+
+    .task-list{
+        padding: 0.5em 0;
+        font-size: 0.8rem;
+    }
+
+    .task-list div{
+        margin-left: 1em;
+    }
+    .task-list button{
+        margin-right: 1em;
+    }
+
+    .task-list-check{
+        padding: 0.5em 0;
+        font-size: 0.8rem;
+    }
+
+    .task-list-check div{
+        margin-left: 1em;
+    }
+    .task-list-check button{
+        margin-right: 1em;
+    }
+
+    #add-button{
+        font-size: 1rem;
+    }
+
+    #time h5 {
+        font-size: 0.5rem;
+    }
+
+    #time h3 {
+        font-size: 1rem;
+    }
+    
+}
