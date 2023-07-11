@@ -9,9 +9,6 @@ let filterList =[];
 let list = [];
 
 
-userInput.addEventListener("focus",function(){
-    userInput.value="";
-})
 for(let i=1;i<tabItems.length;i++){
     tabItems[i].addEventListener("click",function(event){ChangeMode(event)});  
     tabItems[i].addEventListener("click",function(){
@@ -24,6 +21,18 @@ for(let i=1;i<tabItems.length;i++){
         }
     });  
 }
+
+
+userInput.addEventListener("focus",function(){
+    userInput.value="";
+})
+
+userInput.addEventListener("keyup", function(event){
+    if(event.keyCode == 13){
+        event.preventDefault();
+        AddTask();
+    }
+})
 
 
 
