@@ -8,7 +8,6 @@ let taskList = [];
 let filterList =[];
 let list = [];
 
-
 for(let i=1;i<tabItems.length;i++){
     tabItems[i].addEventListener("click",function(event){ChangeMode(event)});  
     tabItems[i].addEventListener("click",function(){
@@ -22,7 +21,6 @@ for(let i=1;i<tabItems.length;i++){
     });  
 }
 
-
 userInput.addEventListener("focus",function(){
     userInput.value="";
 })
@@ -33,8 +31,6 @@ userInput.addEventListener("keyup", function(event){
         AddTask();
     }
 })
-
-
 
 function getTime(){
     let date = new Date();
